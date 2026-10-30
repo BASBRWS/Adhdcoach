@@ -4,7 +4,9 @@ Een eerste werkende webapp voor volwassenen die steun willen bij taakstart, afle
 
 Dit is versie 0.1: een installeerbare PWA voor telefoon en computer, met lokale versleutelde opslag. Geen account, backend, tracking, externe lettertypen of AI-dienst. De app is praktische ondersteuning; geen diagnose, behandeling of crisisvoorziening. De effecten zijn nog niet onderzocht.
 
-![Voorbeeldstand met één taak, een kleine volgende handeling en ruimte voor een losse gedachte](docs/preview.jpg)
+![Voorbeeldstand met één taak, een kleine volgende handeling en ruimte voor een losse gedachte](docs/live.jpg)
+
+Live op [ADHDcoach](https://basbrws.github.io/Adhdcoach/).
 
 ## Wat werkt
 
@@ -32,7 +34,7 @@ Kies eerst **Eerst bekijken met voorbeelden**, of maak een eigen plek met een wa
 
 Publiceer uitsluitend de inhoud van `app/` op een HTTPS static host. Relatieve paden ondersteunen ook een subpad, zoals `/Adhdcoach/`. Op Android Chrome: *App installeren* of *Toevoegen aan startscherm*. Op iPhone Safari: *Delen → Zet op beginscherm*. Offline openen kan na een geslaagde eerste download van de appbestanden; de browser bepaalt installatie en opslagruimte.
 
-De repository zelf publiceert geen website. Deze versie heeft geen native App Store- of Play Store-pakket, geen automatische synchronisatie en geen meldingen op de achtergrond. Elk apparaat en elke browser hebben een eigen opslag. Hosting kan technische bezoekgegevens verwerken.
+De workflow `.github/workflows/pages.yml` publiceert de map `app/` via GitHub Pages na geslaagde broncontroles en tests. Wijzigingen aan de app op `main` starten automatisch een nieuwe publicatie; handmatig starten kan via Actions. Deze versie heeft geen native App Store- of Play Store-pakket, geen automatische synchronisatie en geen meldingen op de achtergrond. Elk apparaat en elke browser hebben een eigen opslag. Hosting kan technische bezoekgegevens verwerken.
 
 ## Privacy in het kort
 
